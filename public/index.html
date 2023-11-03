@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product Card</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .product-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        text-align: center;
+      }
+
+      .product-image img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .product-details {
+        padding: 10px;
+      }
+
+      .product-details h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #333;
+      }
+
+      .product-details p {
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      .product-price p {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        margin: 10px;
+      }
+
+      .product-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+      }
+
+      .rating span {
+        margin-right: 5px;
+      }
+
+      .buy-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .buy-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-image">
+        <img
+          src="**imgUrl**"
+          alt="product-image"
+        />
+      </div>
+      <div class="product-details">
+        <h2>**title**</h2>
+        <p>
+          **description**
+        </p>
+      </div>
+      <div class="product-price">
+        <p>$**price**</p>
+      </div>
+      <div class="product-actions">
+        <div class="rating">
+          <span>[**rating** stars]</span>
+        </div>
+        <button class="buy-button">Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
